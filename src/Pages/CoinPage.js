@@ -40,7 +40,7 @@ const CoinPage = () => {
 
       setAlert({
         open: true,
-        message: `${coin.name} Added to the Watchlist !`,
+        message: `${coin.name} Added to the Wishlist !`,
         type: "success",
       });
     } catch (error) {
@@ -211,7 +211,7 @@ const CoinPage = () => {
               }}
               onClick={inWatchlist ? removeFromWatchlist : addToWatchlist}
             >
-              {inWatchlist ? "Remove from Watchlist" : "Add to Watchlist"}
+              {inWatchlist ? "Remove from Wishlist" : "Add to Wishlist"}
             </Button>
           )}
           
